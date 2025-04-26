@@ -35,8 +35,7 @@ def filterImg(img, kernel,stride):
 	return output
 
 def addBorder(img,size):
-	return  cv.copyMakeBorder(img,top=size, bottom=size, left=size, right=size, borderType=cv.BORDER_CONSTANT, value=[0, 0, 0]
-)
+	return  cv.copyMakeBorder(img,top=size, bottom=size, left=size, right=size, borderType=cv.BORDER_CONSTANT, value=[0, 0, 0])
 
 def getFeatureCoords(img,kernel_size,stride):
 	height,width = img.shape
